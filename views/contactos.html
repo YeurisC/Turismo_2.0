@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="\public\css\contactos.css">
     <title>Contactos</title>
 </head>
 
 <body>
-    <main>
-        <section class="setion-formulario-contactos">
+    <main><!-- este es el formulario de contactos que aloja todos los campos de entrada -->
+        <section class="section-formulario-contactos">
             <h1>Contactos</h1>
             <form action="#" method="post" class="contact-form"><!-- esto es el formulario de contactos -->
                 <label for="name">Nombre:</label>
@@ -21,7 +21,8 @@
                     class="cuadro-email">
                 <br>
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí..."
+                    class="cuadro-mensaje"></textarea>
                 <br>
                 <input type="submit" value="Enviar" class="boton-enviar">
             </form><!-- aquí termina el formulario de contactos -->

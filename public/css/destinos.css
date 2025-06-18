@@ -1,0 +1,284 @@
+/* ============================= */
+/* 1. Reset y estilos base globales */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b2d8ff;
+    color: #333;
+}
+
+/* ============================= */
+/* 2. Galería principal */
+/* ============================= */
+
+.galeria {
+    background: url("../img/lugares_por_visitar_japon_6.jpg") no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.galeria h1 {
+    font-size: 2.5rem;
+}
+
+/* ============================= */
+/* 3. Contenedor de destinos */
+/* ============================= */
+
+.destinos {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.h1destinos {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+/* ============================= */
+/* 4. Tarjetas individuales */
+/* ============================= */
+
+.card_japon {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    background-image: url("../img/lugares_por_visitar_japon_3.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.card_japon h2 {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.card_japon button {
+    align-self: flex-start;
+    padding: 8px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card_japon button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ------------------------------------------------- */
+
+.card_hawaii {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    background-image: url("../img/lugares_por_visitar_hawaii_3.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.card_hawaii h2 {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.card_hawaii button {
+    align-self: flex-start;
+    padding: 8px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card_hawaii button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ------------------------------------------------- */
+
+.card_francia {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    background-image: url("../img/lugares_por_visitar_francia_img_5.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.card_francia h2 {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.card_francia button {
+    align-self: flex-start;
+    padding: 8px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card_francia button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ------------------------------------------------- */
+
+.card_brasil {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    background-image: url("../img/lugares_por_visitar_brasil_img_6.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.card_brasil h2 {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.card_brasil button {
+    align-self: flex-start;
+    padding: 8px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.card_brasil button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ------------------------------------------------- */
+
+.card_colombia {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    background-image: url("../img/lugares_por_visitar_colombia_img_6.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.card_colombia h2 {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.card_colombia button {
+    align-self: flex-start;
+    padding: 8px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card_colombia button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ============================= */
+/* 5. Mensaje final */
+/* ============================= */
+
+.mensajes {
+    background-image: url("../img/lugares_por_visitar_hawaii_3.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.mensaje p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: auto;
+}

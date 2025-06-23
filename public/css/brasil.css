@@ -1,0 +1,422 @@
+/* Base */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Banner principal */
+.banner {
+    width: 100%;
+    height: 812px;
+    flex-shrink: 0;
+    background-image: url("../img/brasil.png");
+    background-size: cover;
+}
+
+/* Sección Lugares Turísticos */
+.lugares_turisticos {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    flex-shrink: 0;
+    background: rgb(15, 15, 32);
+    background-color: rgb(29, 95, 32);
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    padding: 20px;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.lugares_turisticos h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 2;
+}
+
+.card_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+/* Cards */
+.cards1,
+.cards2,
+.cards3 {
+    position: relative;
+    width: 314px;
+    height: 397px;
+    flex-shrink: 0;
+    color: #FFF;
+    border-radius: 10px;
+    background: #1D1B29;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* Imagen en cards */
+.imagen_card {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    display: block;
+}
+
+/* Background images cards */
+.cards1 .imagen_card {
+    background-image: url("../img/lugares_por_visitar_brasil_img_1.jpg");
+}
+
+.cards2 .imagen_card {
+    background-image: url("../img/lugares_por_visitar_brasil_img_2.jpg");
+}
+
+.cards3 .imagen_card {
+    background-image: url("../img/lugares_por_visitar_brasil_img_3.jpg");
+}
+
+
+/* Sección Comida Típica */
+.comida_tipica {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    position: relative;
+    background: #E1E8EF;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.comida_tipica h2 {
+    color: #151320;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.card {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #111122;
+    flex-direction: row;
+}
+
+.imagen_sushi {
+    width: 50%;
+    height: 400px;
+    background-image: url("../img/img_gr_comida_brasil.jpg");
+    background-size: cover;
+}
+
+.descripcion {
+    width: 50%;
+    height: 400px;
+    background-color: #111122;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.descripcion h1 {
+    margin-top: 0;
+    font-size: 40px;
+    color: white;
+}
+
+.descripcion p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Sección Himno */
+.himno {
+    width: 100%;
+    height: 709px;
+    flex-shrink: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/japon_img.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 150px;
+    flex-direction: row;
+}
+
+.reproductor {
+    width: 359px;
+    height: 439px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(34, 87, 121, 0.49);
+    backdrop-filter: blur(15px);
+    position: relative;
+    align-items: center;
+}
+
+.informacion_himno {
+    position: relative;
+    width: 626px;
+    height: 435px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: rgba(34, 87, 121, 0.49);
+    backdrop-filter: blur(15px);
+}
+
+.informacion_himno p {
+    color: #FFF;
+    font-family: "Lisu Bosa", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1px;
+    padding: 50px;
+}
+
+.informacion_himno h1 {
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.bandera {
+    width: 304px;
+    height: 167px;
+    flex-shrink: 0;
+    left: 28px;
+    position: relative;
+    top: 20px;
+}
+
+.audio {
+    position: absolute;
+    right: 29px;
+    bottom: 90px;
+}
+
+/* Sección Lugares por visitar */
+.lugares_visitar {
+    width: 100%;
+    height: 750px;
+    background: #7C0617;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.lugares_visitar h1 {
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container_imagenes {
+    width: 100%;
+    position: relative;
+}
+
+.img_superior {
+    width: 249px;
+    height: 231px;
+    background-image: url("../img/lugares_por_visitar_brasil_img_4.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 30px 20px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 15px;
+    left: 100px;
+}
+
+.img_inferior {
+    width: 249px;
+    height: 231px;
+    background-image: url("../img/lugares_por_visitar_brasil_img_7.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 30px 20px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+/* Sección Mapa */
+.mapa {
+    width: 100%;
+    height: 706px;
+    flex-shrink: 0;
+    background: #1D1B29;
+}
+
+.mapa_google {
+    width: 913px;
+    height: 471px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    position: relative;
+    left: 265px;
+    top: 100px;
+}
+
+.mapa h1 {
+    color: #FFF;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.50);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 65px;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .banner {
+        height: 500px;
+    }
+
+    .lugares_turisticos {
+        height: auto;
+        padding: 10px;
+    }
+
+    .card_container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .cards1,
+    .cards2,
+    .cards3 {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .comida_tipica {
+        height: auto;
+        padding: 20px;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .imagen_sushi,
+    .descripcion {
+        width: 100%;
+        height: auto;
+    }
+
+    .himno {
+        flex-direction: column;
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .reproductor,
+    .informacion_himno {
+        width: 90%;
+        margin: 10px auto;
+        height: auto;
+    }
+
+    .mapa_google {
+        width: 90%;
+        height: 300px;
+        left: 0;
+        top: 0;
+        position: static;
+        border-radius: 10px;
+    }
+
+    .mapa {
+        height: auto;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner {
+        height: 300px;
+    }
+
+    .lugares_turisticos h1,
+    .comida_tipica h2,
+    .lugares_visitar h1,
+    .mapa h1 {
+        font-size: 28px;
+    }
+
+    .cards1,
+    .cards2,
+    .cards3 {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .descripcion h1 {
+        font-size: 28px;
+    }
+
+    .descripcion p {
+        font-size: 14px;
+    }
+
+    .himno p {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .mapa_google {
+        height: 200px;
+    }
+
+    .img_superior,
+    .img_inferior {
+        width: 180px;
+        height: 160px;
+        left: 20px;
+        top: 10px;
+        box-shadow: 0 2px 15px 10px rgba(0, 0, 0, 0.25);
+    }
+}

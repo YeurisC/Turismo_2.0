@@ -1,0 +1,334 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*Banner principal de la pagina*/
+.banner {
+    width: 100%;
+    height: 812px;
+    flex-shrink: 0;
+    background-image: url('../img/japon.png');
+    background-size: cover;
+}
+
+/*Primera seccion de lugares turisticos*/
+.lugares_turisticos {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    flex-shrink: 0;
+    background: rgb(15, 15, 32);
+    background-image: url(../img/2fondo_japon.jpg);
+    display: flex;
+    justify-content: center;
+    /* centra horizontalmente */
+    gap: 55px;
+    /* espacio entre las tarjetas */
+    padding: 20px;
+    background-size: cover;
+    justify-items: center;
+    flex-direction: column;
+
+
+}
+
+
+
+/*Cards de lugares turisticos*/
+.cards1,
+.cards2,
+.cards3 {
+    position: relative;
+    width: 314px;
+    height: 397px;
+    flex-shrink: 0;
+    color: #FFF;
+    border-radius: 10px;
+    background: #1D1B29;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+}
+/*Titulo de lugares turisticos*/
+.titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 2;
+}
+
+/*Contenedor de cards */
+.card_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    z-index: 2;
+
+}
+/*Imagenes de las cards*/
+.img_card {
+    width: 313px;
+    height: 197.5px;
+    flex-shrink: 0;
+
+}
+
+.imagen_card {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    /*Inclinando la imagen*/
+
+}
+/*Asignando backgrounds de las cards para las imagenes*/
+.cards1 .imagen_card {
+    background-image: url(../img/lugares_por_visitar_japon_1.jpg);
+}
+
+.cards2 .imagen_card {
+    background-image: url(../img/lugares_por_visitar_japon_2.jpg);
+}
+
+.cards3 .imagen_card {
+    background-image: url(../img/monte_fuji.jpg);
+}
+
+
+/*Seccion de comida tipica*/
+.comida_tipica {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    position: relative;
+    background: #E1E8EF;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    align-content: center;
+    gap: 20px;
+}
+
+/*Titulo de comida tipica*/
+.comida_tipica h2 {
+    color: #151320;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+/*Card de comida tipica*/
+.card {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #111122;
+    /* color de fondo general si se ve fuera */
+}
+
+/*Imagen*/
+.imagen_sushi {
+    width: 50%;
+    height: 400x;
+    background-image: url(../img/img_gr_comida_japon.jpg);
+    background-size: cover;
+    /* Parte decorativa verde */
+}
+
+/*Descripcion*/
+.descripcion {
+    width: 50%;
+    height: 400px;
+    background-color: #111122;
+    /* Azul marino */
+    padding: 20px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+/*titulo de la descripcion*/
+.descripcion h1 {
+    margin-top: 0;
+    font-size: 40px;
+    color: white;
+}
+/*Parrado de la descripcion*/
+.descripcion p {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.4;
+    top: 100px;
+}
+/*Seccion de himno*/
+.himno {
+    width: 100%;
+    height: 709px;
+    flex-shrink: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/japon_img.jpg);
+    fill: rgba(0, 0, 0, 0.50);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    /* centra horizontalmente */
+    gap: 25px;
+    /* espacio entre las tarjetas */
+    padding: 150px;
+    /*Bajando las cards*/
+    background-size: cover;
+    justify-items: center;
+    flex-direction: row;
+
+}
+/*Div del reproductor*/
+.reproductor {
+    width: 359px;
+    height: 439px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(34, 87, 121, 0.49);
+    backdrop-filter: blur(15px);
+    position: relative;
+    align-items: center;
+}
+/*Div para el parrafo del himno*/
+.informacion_himno {
+    position: relative;
+    width: 626px;
+    height: 435px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: rgba(34, 87, 121, 0.49);
+    backdrop-filter: blur(15px);
+
+
+}
+/*Parrafo del himno*/
+.informacion_himno p {
+    color: #FFF;
+    font-family: "Lisu Bosa";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1px;
+    padding: 50px;
+}
+/*tITULO DEL HIMNO*/
+.informacion_himno h1 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+/*Div para la bandera*/
+.bandera {
+    width: 304px;
+    height: 167px;
+    flex-shrink: 0;
+    left: 28px;
+    position: relative;
+    top: 20px;
+}
+/*Reproductor de audio, ajustando lugar*/
+.audio {
+    position: absolute;
+    right: 29px;
+    bottom: 90px;
+}
+/*Seccion para lugares por visitar*/
+.lugares_visitar {
+    width: 100%;
+    height: 750px;
+    background: #7C0617;
+    display: flex;
+
+
+}
+/*Titulo de lugares por visitar*/
+.lugares_visitar h1 {
+    color: #FFF;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    left: 350px;
+    top: 50px;
+    position: relative;
+}
+/*Imagen superior, Recordar que esta iamgen se multiplicara cuando la profe lo ensene */
+.img_superior {
+    width: 249px;
+    height: 231px;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 5px;
+    background: url(../img/lugares_por_visitar_japon_1.jpg) lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 30px 20px rgba(0, 0, 0, 0.25);
+    top: 150px;
+    right: 600px;
+}
+/*Imagen inferior, Recordar que esta iamgen se multiplicara cuando la profe lo ensene */
+.img_inferior {
+    width: 249px;
+    height: 231px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: url(../img/lugares_por_visitar_japon_5.jpg) lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 30px 20px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 450px;
+    right: 800px;
+}
+/*Seccion del mapa*/
+.mapa{
+    width: 1440px;
+height: 706px;
+flex-shrink: 0;
+background: #1D1B29;
+}
+/*Ajustando iframe*/
+.mapa_google{
+width: 913px;
+height: 471px;
+flex-shrink: 0;
+border-radius: 10px;
+position: relative;
+left: 265px;
+top: 100px;
+}
+/*Titulo del mapa*/
+.mapa h1{
+    color: #FFF;
+text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 65px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+position: relative;
+text-align: center;
+}

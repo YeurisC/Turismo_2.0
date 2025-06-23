@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japón</title>
+    <link rel="stylesheet" href="../public/css/japon.css">
 </head>
+
 <body>
     <header>
         <!--Aqui va el navbar-->
@@ -12,48 +15,89 @@
     <main>
         <div class="banner"></div>
         <section class="lugares_turisticos">
-            <h1>Lugares Turisticos</h1>
-            <div class="kioto">
-                <h1>Kioto</h1>
-                <p> Kioto se encuentra rodeada de una rica belleza natural, y es una ciudad con un repertorio único que muestra una cultura de gran atractivo, la cual se ha ido perfeccionando a lo largo de los últimos 1200 años. Muchos aspectos de la cultura japonesa tienen su origen en Kioto, se encuentran profundamente arraigados en la vida de sus habitantes y se ven reflejados también en la actualidad. </p>
+            <div class="titulo">
+                <h1>Lugares Turisticos</h1>
             </div>
-            <div class="tokyo">
-                <h1>Tokyo</h1>
-                <p>Tokio es la capital de Japón y una de las ciudades más dinámicas del mundo. Combina a la perfección lo tradicional y lo moderno: en ella puedes encontrar templos milenarios junto a imponentes rascacielos, barrios tradicionales como Asakusa, zonas muy vivas como Shibuya o Shinjuku, y espacios más tranquilos como parques y jardines. Además, es el centro político, económico y cultural de Japón, reconocido tanto por su tecnología de vanguardia como por sus costumbres y festivales.</p>
-            </div>
-            <div class="monte_fuji">
-                <h1>Monte Fuji</h1>
-                <p>El monte Fuji es la montaña más alta de Japón, con 3,776 metros de altura. Es un volcán inactivo pero aún considerado activo, y tiene una forma cónica casi perfectamente simétrica que lo hace muy reconocido en todo el mundo. Además de ser un lugar sagrado en la cultura japonesa, es también un destino popular para excursionistas, viajeros y fotógrafos, tanto por sus rutas de ascenso como por el paisaje que ofrece en cualquier estación del año.</p>
+            <div class="card_container">
+                <div class="cards1">
+                    <div class="imagen_card"></div>
+                    <h2>Kioto</h2>
+                    <p> Kioto se encuentra rodeada de una rica belleza natural, y es una ciudad con un repertorio único
+                        que muestra una cultura de gran atractivo, la cual se ha ido perfeccionando a lo largo de los
+                        últimos 1200 años. Muchos aspectos de la cultura japonesa tienen su origen en Kioto, se
+                        encuentran profundamente arraigados en la vida de sus habitantes y se ven reflejados también en
+                        la actualidad. </p>
+                </div>
+                <div class="cards2">
+                    <div class="imagen_card"></div>
+                    <h2>Tokyo</h2>
+                    <p>Tokio es la capital de Japón y una de las ciudades más dinámicas del mundo. Combina a la
+                        perfección lo tradicional y lo moderno: en ella puedes encontrar templos milenarios junto a
+                        imponentes rascacielos, barrios tradicionales como Asakusa, zonas muy vivas como Shibuya o
+                        Shinjuku, y espacios más tranquilos como parques y jardines. Además, es el centro político,
+                        económico y cultural de Japón, reconocido tanto por su tecnología de vanguardia como por sus
+                        costumbres y festivales.</p>
+                </div>
+                <div class="cards3">
+                    <div class="imagen_card"></div>
+                    <h2>Monte Fuji</h2>
+                    <p>El monte Fuji es la montaña más alta de Japón, con 3,776 metros de altura. Es un volcán inactivo
+                        pero aún considerado activo, y tiene una forma cónica casi perfectamente simétrica que lo hace
+                        muy reconocido en todo el mundo. Además de ser un lugar sagrado en la cultura japonesa, es
+                        también un destino popular para excursionistas, viajeros y fotógrafos, tanto por sus rutas de
+                        ascenso como por el paisaje que ofrece en cualquier estación del año.</p>
+                </div>
             </div>
         </section>
         <section class="comida_tipica">
+            <h2>COMIDA TIPICA</h2>
             <div class="card">
                 <div class="imagen_sushi"></div>
-                <h1>Sushi</h1>
-                <p>El sushi es una preparación de origen japonés de arroz cocido, que va acompañado de diversos ingredientes cocidos o crudos. Su popularidad se extendió a finales del siglo XX, pues la versatilidad que ofrecen sus ingredientes principales deriva en la posibilidad de realizar distintas variantes que se pueden ajustar a cada gusto.</p>
-                <img src="" alt="">
+                <div class="descripcion">
+                    <h1>Sushi</h1>
+                    <p>El sushi es una preparación de origen japonés de arroz cocido, que va acompañado de diversos
+                        ingredientes cocidos o crudos. Su popularidad se extendió a finales del siglo XX, pues la
+                        versatilidad que ofrecen sus ingredientes principales deriva en la posibilidad de realizar
+                        distintas
+                        variantes que se pueden ajustar a cada gusto.</p>
+                    <img src="" alt="">
+                </div>
             </div>
         </section>
         <section class="himno"> <!--Reproductor para uadio-->
             <div class="reproductor">
-                <img src="" alt=""> <!--Imagen de bandera-->
-                <audio src=""></audio> <!--Aqui va el himno-->
+                <img src="../public/img/japon_bandera.jpg" alt="" class="bandera"> <!--Imagen de bandera-->
+                <audio src="../public/audios/Japón_Kimigayo_Himno_Nacional_Japonés_Que_su_Reinado_Dure.m4a" controls
+                    class="audio"></audio> <!--Aqui va el himno-->
             </div>
             <div class="informacion_himno">
                 <h1>HIMNO A JAPÓN</h1>
-                <p>El himno nacional de Japón, llamado "Kimigayo", tiene una letra basada en un poema del siglo X que expresa deseos de longevidad y prosperidad. Aunque comenzó a usarse durante la Restauración Meiji en el siglo XIX, no fue adoptado oficialmente hasta 1999. Su música fue compuesta en 1880 por Hiromori Hayashi y arreglada por el músico alemán Franz Eckert. Es uno de los himnos más cortos del mundo y ha generado controversias debido a su asociación con el pasado imperial japonés, aunque sigue utilizándose en ceremonias oficiales y eventos públicos.</p>
+                <p>El himno nacional de Japón, llamado "Kimigayo", tiene una letra basada en un poema del siglo X que
+                    expresa deseos de longevidad y prosperidad. Aunque comenzó a usarse durante la Restauración Meiji en
+                    el siglo XIX, no fue adoptado oficialmente hasta 1999. Su música fue compuesta en 1880 por Hiromori
+                    Hayashi y arreglada por el músico alemán Franz Eckert. Es uno de los himnos más cortos del mundo y
+                    ha generado controversias debido a su asociación con el pasado imperial japonés, aunque sigue
+                    utilizándose en ceremonias oficiales y eventos públicos.</p>
             </div>
         </section>
         <section class="lugares_visitar">
+            <h1>LUGARES POR VISITAR</h1>
             <div class="img_superior"></div> <!--Carrusel superior-->
             <div class="img_inferior"></div> <!--Carrusel inferior-->
         </section>
         <section class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14587804.717874044!2d133.14528914522097!3d36.20482494318897!2m3!1f0!2f0!3f0!3f0!3m2!1i1024!2i768!4f13.1!3m5!1s0x34674fc9c9ed95e9:0xe46d17b63549f05c!2sJap%C3%B3n!5e0!3m2!1ses!2ses!4v1718659541453!5m2!1ses!2ses"></iframe>
+            <h1>HECHA UN VISTAZO AL MAPA</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6620037.393928983!2d129.40847975176514!3d36.209356378527934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346856e7a7b69d25%3A0x35c3e60c3f0e1291!2sJap%C3%B3n!5e0!3m2!1ses!2spe!4v1718919693699!5m2!1ses!2spe"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="mapa_google">
+            </iframe>
+
         </section>
     </main>
     <footer>
         <!--Aqui va el footer-->
     </footer>
 </body>
+
 </html>

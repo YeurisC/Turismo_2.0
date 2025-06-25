@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.galeria {
+    background-image: url(/public/img/lugares_por_visitar_brasil_img_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.card {
+    width: 410px;
+    background: #91ABBB;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    padding: 0px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.section-principal {
+    text-align: center;
+    width: 1500px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.section-normal {
+    text-align: center;
+    width: 900px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card.francia::before {
+    border-radius: 10px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-image: url('../img/lugares_por_visitar_francia_img_1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card.japon::before {
+    border-radius: 10px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-image: url(/public/img/japon_img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card.brasil::before {
+    background-image: url(/public/img/brazil_estatua.jpg);
+    border-radius: 10px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card.colombia::before {
+    background-image: url(/public/img/lugares_por_visitar_colombia_img_9.jpg);
+    border-radius: 10px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card.hawai::before {
+    background-image: url(/public/img/imagen_hawaii.jpeg);
+    border-radius: 10px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}

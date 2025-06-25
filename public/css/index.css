@@ -1,0 +1,205 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Banner principal */
+.banner {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner h1 {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #FFF;
+    font-family: "Lisu Bosa";
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    height: 70vh;
+}
+
+.boton_destinos {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.40);
+    backdrop-filter: blur(20px);
+    color: white;
+    font-size: 2rem;
+    font-family: "Lisu Bosa";
+    border: none;
+    transition: 0.3s;
+}
+
+.boton_destinos:hover {
+    background: rgba(217, 217, 217, 0.90);
+}
+
+.boton_destinos a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+.boton_mover {
+    margin-left: 98px;
+    position: absolute;
+    top: 400px;
+}
+
+/* Cards del index */
+.cards {
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/mapa_mundo.png);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card1, .card2, .card3 {
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(34, 87, 121, 0.49);
+    backdrop-filter: blur(15px);
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.card1 h1, .card2 h1, .card3 h1 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 180px;
+    position: relative;
+    text-align: center;
+}
+
+.boton1 button, .boton2 button, .boton3 button {
+    width: 110px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #225779;
+    font-family: "Lisu Bosa";
+    font-size: 1.2rem;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.boton1 button:hover, .boton2 button:hover, .boton3 button:hover {
+    background-color: #225779;
+    color: aliceblue;
+}
+
+.img_card1, .img_card2, .img_card3 {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+}
+
+/* Asignando backgrounds */
+.img_card1 {
+    background-image: url(../img/imagen_hawaii.jpeg);
+}
+
+.img_card2 {
+    background-image: url(../img/img_brasil.jpeg);
+}
+
+.img_card3 {
+    background-image: url(../img/japon_img.jpg);
+}
+
+/* MEDIA QUERIES: RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .banner h1 {
+        font-size: 4rem;
+        padding: 60px 20px;
+    }
+
+    .boton_destinos {
+        font-size: 1.2rem;
+        width: 160px;
+        height: 45px;
+    }
+
+    .boton_mover {
+        margin-left: 20px;
+        top: 450px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .banner {
+        height: 400px;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+        padding: 20px;
+        height: auto;
+    }
+
+    .boton_destinos {
+        font-size: 1rem;
+        width: 140px;
+        height: 40px;
+    }
+
+    .boton_mover {
+        position: relative;
+        margin: 20px auto;
+        top: 0;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .card1, .card2, .card3 {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .card1 h1, .card2 h1, .card3 h1 {
+        font-size: 1.5rem;
+        margin-top: 150px;
+    }
+
+    .boton1 button, .boton2 button, .boton3 button {
+        font-size: 1rem;
+    }
+
+    .img_card1, .img_card2, .img_card3 {
+        height: 150px;
+    }
+}

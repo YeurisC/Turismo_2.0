@@ -1,0 +1,185 @@
+/* ============================= */
+/* 1. Reset y estilos base globales */
+/* ============================= */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #7FC8F9 0%, #4B7693 100%)
+}
+
+h1 {
+    font-family: "Lisu Bosa";
+}
+
+p {
+    font-family: "Roboto"
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+.galeria {
+    background: url("../img/lugares_por_visitar_japon_6.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 702px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.galeria h1 {
+    font-size: 110px;
+
+}
+.destinos {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.h1destinos {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    height: 50px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    font-size: 96px
+}
+
+.card_japon,
+.card_hawaii,
+.card_francia,
+.card_brasil,
+.card_colombia {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.card_japon h2,
+.card_hawaii h2,
+.card_francia h2,
+.card_brasil h2,
+.card_colombia h2 {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 30px
+}
+
+button {
+    align-self: flex-start;
+    padding: 8px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(24, 22, 22, 0.315);
+}
+
+.card_hawaii {
+    background-image: url("../img/lugares_por_visitar_hawaii_1.jpg");
+}
+
+.card_japon {
+    background-image: url("../img/lugares_por_visitar_japon_1.jpg");
+}
+
+.card_francia {
+    background-image: url("../img/lugares_por_visitar_francia_img_1.jpg");
+}
+
+.card_brasil {
+    background-image: url("../img/lugares_por_visitar_brasil_img_1.jpg");
+}
+
+.card_colombia {
+    background-image: url("../img/lugares_por_visitar_colombia_img_1.jpg");
+}
+
+.mensajes {
+    background-image: url("../img/lugares_por_visitar_hawaii_3.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.mensaje p {
+    padding: 50px;
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/* responsividad */
+
+@media screen and (max-width: 768px) {
+    .galeria h1 {
+        font-size: 48px;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .h1destinos {
+        font-size: 48px;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .card_japon,
+    .card_hawaii,
+    .card_francia,
+    .card_brasil,
+    .card_colombia {
+        width: 90%;
+        height: 50%;
+        padding: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 6px 16px;
+    }
+
+    .mensaje p {
+        font-size: 32px;
+        padding: 1rem;
+    }
+}

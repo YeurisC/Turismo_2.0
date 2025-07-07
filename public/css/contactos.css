@@ -1,0 +1,140 @@
+/* limpio los margenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* defino las fuentes que son necesarias */
+body {
+
+    color: #000;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+/* defino la seccion de formulario de contactos */
+
+.section-formulario-contactos {
+    flex: 1;
+    background: linear-gradient(135deg, #2c5f7a 0%, #4a8db8 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.section-formulario-contactos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+h1 {
+    display: none;
+    /* Oculto porque en la imagen no se ve */
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-form::before {
+    content: 'CONTACTANOS';
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+label {
+    display: none;
+    /* Oculta las etiquetas ya que usamos placeholders */
+}
+/* definicion de estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(144, 164, 180, 0.8);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+/* definicion de estilos para los placeholders de los campos de entrada */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+}
+/* definicion de estilos para los campos de entrada en foco/efecto */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background: rgba(144, 164, 180, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* definicion de estilos para el cuadro de mensaje */
+.cuadro-mensaje {
+    min-height: 120px;
+    resize: vertical;
+    margin-bottom: 1.5rem;
+}
+/* definicion de estilos para el boton de enviar */
+.boton-enviar {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #6b8ca3 0%, #4a6b7c 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* definicion de estilos para el boton de enviar en estado hover */
+.boton-enviar:hover {
+    background: linear-gradient(135deg, #5a7b92 0%, #3d5a6b 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.boton-enviar:active {
+    transform: translateY(0);
+}

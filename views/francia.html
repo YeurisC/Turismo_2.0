@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-<html lang="es"> <!-- mejor en español si es para presentación local -->
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Francia</title>
-    <link rel="stylesheet" href="../public/css/francia.css">
+    <link rel="stylesheet" href="../public/css/francia.css"> <!-- Usamos misma ruta que en Colombia -->
 </head>
+
 <body>
     <header>
-        <!-- Aquí va el navbar (pendiente agregar) -->
+        <!-- Aqui va el navbar -->
     </header>
 
     <main>
-        <!-- Banner principal -->
-        <div class="banner"></div>
+        <div class="banner"></div> <!-- Banner -->
 
         <!-- Lugares turísticos -->
         <section class="lugares_turisticos">
-            <h1 class="titulo">Lugares Turísticos</h1>
+            <h1>Lugares Turísticos</h1>
             <div class="card_container">
-                <!-- París -->
                 <div class="cards1">
                     <div class="imagen_card"></div>
                     <h2>París</h2>
                     <p>París es la ciudad del amor, famosa por la Torre Eiffel, el Louvre y sus encantadoras calles. Un lugar icónico que debes visitar.</p>
                 </div>
-                <!-- Marsella -->
                 <div class="cards2">
                     <div class="imagen_card"></div>
                     <h2>Marsella</h2>
                     <p>Ciudad portuaria del sur de Francia con mucha historia, playas, y el famoso puerto viejo. Ideal para disfrutar del mar y la cultura.</p>
                 </div>
-                <!-- Lyon -->
                 <div class="cards3">
                     <div class="imagen_card"></div>
                     <h2>Lyon</h2>
@@ -42,9 +40,9 @@
 
         <!-- Comida típica -->
         <section class="comida_tipica">
-            <h2>Comida Típica</h2>
+            <h2>COMIDA TIPICA</h2>
             <div class="card">
-                <div class="imagen_boeuf"></div>
+                <div class="imagen_boeuf"></div> <!-- Usamos clase igual a la de Colombia -->
                 <div class="descripcion">
                     <h1>Boeuf Bourguignon</h1>
                     <p>Estofado de carne de res cocido en vino tinto con verduritas. Súper típico de la región de Borgoña.</p>
@@ -56,32 +54,35 @@
         <section class="himno">
             <div class="reproductor">
                 <img src="../public/img/bandera_francia.webp" class="bandera">
-                <audio controls>
-                    <source src="../public/audios/Himno_de_Francia_LA MARSEILLAISE.mp3" type="audio/mpeg">
-                </audio>
+                <audio src="../public/audios/Himno_de_Francia_LA MARSEILLAISE.mp3" controls class="audio"></audio>
             </div>
             <div class="informacion_himno">
-                <h1>Himno a Francia</h1>
+                <h1>HIMNO A Francia</h1>
                 <p>"La Marseillaise" fue compuesta en 1792. Es un símbolo de lucha y libertad durante la Revolución Francesa.</p>
             </div>
         </section>
 
-        <!-- Carrusel de lugares por visitar -->
+        <!-- Lugares por visitar -->
         <section class="lugares_visitar">
-            <h1>Lugares por Visitar</h1>
-            <div class="img_superior"></div>
-            <div class="img_inferior"></div>
+            <h1>LUGARES POR VISITAR</h1>
+            <div class="container_imagenes">
+                <div class="img_superior"></div>
+                <div class="img_inferior"></div>
+            </div>
         </section>
 
-        <!-- Mapa de Francia -->
+        <!-- Mapa -->
         <section class="mapa">
-            <h1>Ubicación en el Mapa</h1>
-            <iframe class="mapa_google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5314879.009312282!2d1.8883333!3d46.603354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e296f6a0cd7%3A0x40b82c3688c9460!2sFrancia!5e0!3m2!1ses!2sdo!4v1718730000000!5m2!1ses!2sdo" allowfullscreen="" loading="lazy"></iframe>
+            <h1>HECHA UN VISTAZO AL MAPA</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5314879.009312282!2d1.8883333!3d46.603354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e296f6a0cd7%3A0x40b82c3688c9460!2sFrancia!5e0!3m2!1ses!2sdo!4v1718730000000!5m2!1ses!2sdo"
+                width="600" height="450" frameborder="0" allowfullscreen loading="lazy" class="mapa_google">
+            </iframe>
         </section>
     </main>
 
     <footer>
-        <!-- Aquí va el footer (pendiente agregar también) -->
+        <!-- Aqui va el footer -->
     </footer>
 </body>
+
 </html>

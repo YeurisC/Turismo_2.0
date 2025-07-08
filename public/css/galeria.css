@@ -131,3 +131,54 @@ a {
     background-size: cover;
     background-position: center;
 }
+
+/* RESPONSIVE PARA TABLETS */
+@media screen and (max-width: 1024px) {
+.section-principal, .section-normal {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+}
+
+.card {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 40px;
+}
+}
+
+/* RESPONSIVE PARA CELULARES */
+@media screen and (max-width: 600px) {
+.galeria {
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.card {
+    width: 90%;
+    margin: 15px auto;
+}
+
+.card::before {
+    height: 120px;
+}
+
+  .section-principal, .section-normal {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+    p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas */
+    gap: 20px;
+    padding: 30px;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img {
+    background-image: url("../img/auronplay.jpg");
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+/* Estilos de titulos generales */
+.card-titulo {
+    border-radius: 10px 10px 0px 0px;
+    background: #3C3851;
+}
+
+.card-titulo h2 {
+    color: #FFF;
+    font-family: "Lisu Bosa";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-contenido {
+    padding: 20px;
+}
+.card-contenido ul {
+    list-style-type: none;
+    padding: 0;
+}
+.card-contenido li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* informacion usuario */
+.informacionpersona .card {
+    padding: 20px;
+}
+.informacionpersona{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.informacionpersona h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.informacionpersona p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.informacionpersona img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* BOTON DE FAVORITOS */
+.boton {
+    width: 20px;
+    height: 20px;
+    background-color: #3C3851;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.boton:hover {
+    background-color: #ff0000;
+}
+.boton:active {
+    transform: scale(1.5);
+}
+.botonver{
+    width: 50px;
+    background-color: #3C3851;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.botonver:hover {
+    background-color: #0066ff;
+}
+.botonver:active {
+    transform: scale(1.5);
+}

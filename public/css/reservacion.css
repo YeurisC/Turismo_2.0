@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+img{
+    
+}
+
 body{
     background-color: rgb(255, 255, 255);
 }
 
 
-button{
-    background-color: rgb(226, 40, 40);
+.boton{
+    background-color: rgb(228, 38, 38);
+    font-size:medium;
+    align-items: center;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+
 }
